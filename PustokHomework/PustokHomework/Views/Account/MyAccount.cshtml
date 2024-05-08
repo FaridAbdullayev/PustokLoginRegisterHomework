@@ -1,0 +1,104 @@
+﻿@model AppUser
+
+
+
+
+<div class="site-wrapper" id="top">
+	<div class="page-section inner-page-sec-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="row">
+						<!-- My Account Tab Menu Start -->
+						<div class="col-lg-3 col-12">
+							<div class="myaccount-tab-menu nav" role="tablist">
+								<a href="#dashboad" class="active" data-toggle="tab">
+									<i class="fas fa-tachometer-alt"></i>
+									Dashboard
+								</a>
+								<a href="#account-info" data-toggle="tab">
+									<i class="fa fa-user"></i> Account
+									Details
+								</a>
+								<a href="login-register.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+							</div>
+						</div>
+						<!-- My Account Tab Menu End -->
+						<!-- My Account Tab Content Start -->
+						<div class="col-lg-9 col-12 mt--30 mt-lg--0">
+							<div class="tab-content" id="myaccountContent">
+								<!-- Single Tab Content Start -->
+								<div class="tab-pane fade show active" id="dashboad" role="tabpanel">
+									<div class="myaccount-content">
+										<h3>Dashboard</h3>
+										<div class="welcome mb-20">
+											<p>
+												Hello, <strong>Alex Tuntuni</strong> (If Not <strong>
+													Tuntuni
+													!
+												</strong><a href="login-register.html" class="logout">
+													Logout
+												</a>)
+											</p>
+										</div>
+										<p class="mb-0">
+											From your account dashboard. you can easily check &amp; view
+											your
+											recent orders, manage your shipping and billing addresses and edit your
+											password and account details.
+										</p>
+									</div>
+								</div>
+								<!-- Single Tab Content End -->
+								<!-- Single Tab Content Start -->
+								<div class="tab-pane fade" id="account-info" role="tabpanel">
+									<div class="myaccount-content">
+										<h3>Account Details</h3>
+										<div class="account-details-form">
+											<form action="#">
+												<div class="row">
+													<div class="col-lg-6 col-12  mb--30">
+														<label>FullName</label>
+														<input id="first-name" placeholder="@Model.FullName" type="text">
+													</div>
+													<div class="col-lg-6 col-12  mb--30">
+														<label>Email</label>
+														<input id="last-name" placeholder="@Model.Email" type="text">
+													</div>
+													<div class="col-12  mb--30">
+														<label>Username</label>
+														<input id="display-name" placeholder="@Model.UserName" type="text">
+													</div>
+													<div class="col-12  mb--30">
+														<h4>Password change</h4>
+													</div>
+													<div class="col-12  mb--30">
+														<input id="current-pwd" placeholder="Current Password"
+															   type="password">
+													</div>
+													<div class="col-lg-6 col-12  mb--30">
+														<input id="new-pwd" placeholder="New Password"
+															   type="password">
+													</div>
+													<div class="col-lg-6 col-12  mb--30">
+														<input id="confirm-pwd" placeholder="Confirm Password"
+															   type="password">
+													</div>
+													<div class="col-12">
+														<button class="btn btn--primary">Save Changes</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<!-- Single Tab Content End -->
+							</div>
+						</div>
+						<!-- My Account Tab Content End -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
